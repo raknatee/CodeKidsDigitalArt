@@ -47,7 +47,7 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   setup(){
-    document.title = "Procreate"
+    document.title = "CodeKids-DigitalArt"
   }
 
 });
