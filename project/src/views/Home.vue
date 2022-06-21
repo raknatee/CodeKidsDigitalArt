@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <img src="/img/main.jpeg" class="img-slide" alt="">
-    <h1>Units</h1>
 
     <div class="title-grid">
       <UnitButton  v-for="unit in units" :key="unit.unitId" :unit="unit"/>

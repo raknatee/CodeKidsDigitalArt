@@ -15,8 +15,8 @@ export default defineComponent({
   },
   setup(){
     const imgPaths:string[] = []
-    for(let i=1;i<=14;i++){
-        imgPaths.push(`/img/Unit1/Unit1-${i}.JPG`)
+    for(let i=1;i<=11;i++){
+        imgPaths.push(`/img/Unit4/Unit4-${i}.JPG`)
     }
     return {imgPaths}
   }
