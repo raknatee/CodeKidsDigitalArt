@@ -1,0 +1,22 @@
+version: "3"
+services: 
+
+    project:
+        build: 
+            context: .
+
+            dockerfile: dev.Dockerfile
+        
+        volumes: 
+            - ./project:/home/project
+            - /home/project/node_modules        
+            - ./.vscode:/root/.vscode-server
+
+        environment: 
+            - CHOKIDAR_USEPOLLING=true
+        ports:
+            - "80:80"
+
+
+
+            
