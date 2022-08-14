@@ -1,13 +1,7 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 
-import Unit1 from "@/views/units/Unit1.vue"
-import Unit2 from "@/views/units/Unit2.vue"
-import Unit3 from "@/views/units/Unit3.vue"
-import Unit4 from "@/views/units/Unit4.vue"
-import Unit5 from "@/views/units/Unit5.vue"
-
-const vuePages = [Unit1,Unit2,Unit3,Unit4,Unit5]
+import Unit from "@/views/units/Unit.vue"
 
 import {units} from './constant'
 
@@ -21,10 +15,10 @@ const routes: Array<RouteRecordRaw> = [
   },
 ]
 
-for(let i=0;i<vuePages.length;i++){
+for(let i=1;i<=12;i++){
   routes.push({
-    path: `/unit-${units[i].unitId}`,
-    component: vuePages[i]
+    path: `/unit${i}`,
+    component: Unit
   })
 }
 

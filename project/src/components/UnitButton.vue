@@ -1,5 +1,5 @@
 <template>
-  <BasicButton :to="`/unit-${unit.unitId}`">
+  <BasicButton :to="`/unit${unit.unitId}`">
     <div class="star">
       <div class="star-element" v-for="i in unit.starPoint" :key="i"></div>
     </div>
